@@ -1,21 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AutoBattle
+﻿namespace AutoBattle
 {
     public class Types
     {
-
         public struct CharacterClassSpecific
         {
             CharacterClass CharacterClass;
             float hpModifier;
             float ClassDamage;
             CharacterSkills[] skills;
-
         }
-
         public struct GridBox
         {
             public int xIndex;
@@ -30,16 +23,13 @@ namespace AutoBattle
                 this.ocupied = ocupied;
                 this.Index = index;
             }
-
         }
-
         public struct CharacterSkills
         {
             string Name;
             float damage;
             float damageMultiplier;
         }
-
         public enum CharacterClass : uint
         {
             Paladin = 1,
@@ -47,6 +37,5 @@ namespace AutoBattle
             Cleric = 3,
             Archer = 4
         }
-
     }
 }
